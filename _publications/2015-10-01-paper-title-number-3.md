@@ -1,0 +1,13 @@
+---
+title: "G-EEGCS: Graph-based optimum electroencephalogram channel selection"
+collection: publications
+category: manuscripts
+permalink: 
+excerpt: 'Electroencephalography (EEG) is commonly used to measure brain activity in clinical research. However, the abundance of channels in EEG data poses several challenges, including increased computational complexity, noise interference, and decreased efficiency in data analysis. A new graph-based method called G-EEGCS has been developed to address these issues for EEG channel selection. The graph-based optimum EEG channel selection (G-EEGCS) method constructs a directed network by establishing channel connections based on their pairwise correlations. Statistical features are used to determine similarity, and an adjacency matrix is created to represent the connectivity between the EEG channels. The influence of each channel on information flow within the network is assessed using the centrality measures. By calculating the shortest paths between all channel pairs, the algorithm quantifies the probability of each channel serving as a bridge between different parts of the graph. Channels with high centrality scores, indicating their significance in the information flow, are given priority during the selection process. An adaptive threshold is applied to optimize channel selection, ensuring that only channels that exceed the threshold, exhibit specific characteristics, and align with the overall network structure are retained. This adaptive thresholding mechanism enhances the robustness and flexibility of the G-EEGCS method, enabling personalized channel selection tailored to individual EEG datasets. The G-EEGCS approach offers a promising solution for EEG channel selection, improving the interpretability and efficiency of EEG-based studies and applications for researchers. It achieved an average accuracy of 0.9125, outperforming state-of-the-art methods. This method provides a valuable means of addressing the challenges posed by the multitude of channels in EEG data, ultimately contributing to more effective and insightful analysis in clinical research.'
+date: 2024/12/1
+venue: 'Biomedical Signal Processing and Control'
+# slidesurl: '[http://academicpages.github.io/files/slides3.pdf](https://www.sciencedirect.com/science/article/pii/S1746809424008218)'
+paperurl: '[http://academicpages.github.io/files/paper3.pdf](https://www.sciencedirect.com/science/article/pii/S1746809424008218)'
+citation: 'Abdullah, Faye, I., Yusoff, M. Z., & Belhaouari, S. B. (2024). G-EEGCS: Graph-based optimum electroencephalogram channel selection. Biomedical Signal Processing and Control, 98, 106763.'
+---
+
