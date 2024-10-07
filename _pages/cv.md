@@ -35,10 +35,11 @@ Work experience
 Skills
 ======
 * Python
+  * Pandas
+  * Matplotlib
+  * Keras
+  * PyTorch
 * MATLAB
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
 * R
 
 Publications
