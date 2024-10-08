@@ -21,6 +21,8 @@ Work experience
   * Developed an adaptive threshold-based method integrated with a modified Convolutional Neural Network (CNN) architecture to enhance EEG channel selection in Brain-Computer Interface (BCI) applications. This approach 
     achieved significant improvements in accuracy, reaching 93.90% with the k-adaptEEGCS model and 95.60% with the G-EEGCS model.
 
+  * 
+
   
 Skills
 ======
