@@ -33,6 +33,8 @@ Tools
 Skills
 ======
 * Applied Mathematics
+* Signal Processing
+* Image Processing
 * Probability
 * Python Programming
 * Deep Learning
