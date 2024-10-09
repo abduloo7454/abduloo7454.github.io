@@ -39,7 +39,11 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-
+Reviewer
+======
+* Health information science and systems (SPRINGER)
+* Human-centric intelligent systems (SPRINGER)
+* ICONIP conference
   
 Teaching
 ======
@@ -47,8 +51,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Reviewer
-======
-* Health information science and systems (SPRINGER)
-* Human-centric intelligent systems (SPRINGER)
-* ICONIP conference
+
