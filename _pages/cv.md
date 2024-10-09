@@ -23,15 +23,22 @@ Work experience
   * 
 
   
+Tools
+======
+* Pandas, Numpy, Matplotlib, Seaborn, Plotly, Sklearn, Keras, PyTorch, R, Matlab, Tableau, Streamlit
+* GNN, GCN, CNN, K-means, PCA, Transformer
+* MS Word, Excel, PowerPoint
+
 Skills
 ======
-* Python
-  * Pandas
-  * Matplotlib
-  * Keras
-  * PyTorch
-* MATLAB
-* R
+* Applied Mathematics
+* Probability
+* Python Programming
+* Deep Learning
+* Linear Algebra
+* Calculus
+* Optimization
+* Reinforcement Learning
 
 Publications
 ======
