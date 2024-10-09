@@ -21,7 +21,7 @@ Work experience
   * Developed an adaptive threshold-based method integrated with a modified Convolutional Neural Network (CNN) architecture to enhance EEG channel selection in Brain-Computer Interface (BCI) applications. This approach 
     achieved significant improvements in accuracy, reaching 93.90% with the k-adaptEEGCS model and 95.60% with the G-EEGCS model.
   * Introduced Hyper-GCN, a novel hyperscanning EEG signal classification approach in an end-to-end manner. This introduces graph convolutional neural networks (GCN) to handle the spatial-temporal dynamics of EEG data for 
-    improving the accuracy of neuroimaging studies. The model achieved an accuracy of 95.92\% on eight average subject-wise trials and 93.54\% on a hyperscanning dataset containing considerable variability in tasks.
+    improving the accuracy of neuroimaging studies. The model achieved an accuracy of 95.92% on eight average subject-wise trials and 93.54% on a hyperscanning dataset containing considerable variability in tasks.
 
   
 Tools
