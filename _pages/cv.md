@@ -47,6 +47,8 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Reviewer
 ======
-* Currently signed in to 43 different slack teams
+* Health information science and systems (SPRINGER)
+* Human-centric intelligent systems (SPRINGER)
+* ICONIP conference
