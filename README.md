@@ -1,6 +1,4 @@
 # main-site
-<<<<<<< HEAD
-=======
 
 Personal academic homepage for Abdullah. Plain HTML and CSS, no build step.
 
@@ -25,4 +23,3 @@ python3 -m http.server 8000
 Titles, authors, venues and links come from the Google Scholar profile
 (user e6CxHyAAAAAJ), checked on 13 Oct 2026. IEEE titles were checked against IEEE Xplore.
 When a new paper appears, add a `<div class="pub">` block in publications.html, an `<article class="card">` in index.html if it should be featured, and an update line.
->>>>>>> 8aad965 (Use full portrait photo)

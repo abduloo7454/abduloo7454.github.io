@@ -26,7 +26,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--link); outline-off
 h1{font-weight:600; font-size:clamp(40px,7vw,58px); line-height:1.1; letter-spacing:-.02em; margin:56px 0 44px}
 .intro{display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:56px; align-items:start}
 .intro p{margin:0 0 18px}
-.intro strong{font-weight:600}
+.intro strong{font-weight:600; color:var(--link)}
 
 .photo{display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover}
 .contact{
