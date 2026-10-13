@@ -140,8 +140,8 @@
     <li><time datetime="2024-12">December 2024</time><span><a href="https://www.sciencedirect.com/science/article/pii/S1746809424008218">G-EEGCS</a> appeared in Biomedical Signal Processing and Control, vol. 98.</span></li>
     <li><time datetime="2024-09">September 2024</time><span><a href="https://ieeexplore.ieee.org/document/10678879"><i>k</i>-AdaptEEGCS</a> was published in IEEE Sensors Letters.</span></li>
     <li><time datetime="2024-08">August 2024</time><span>Our work on <a href="https://link.springer.com/chapter/10.1007/978-3-031-70816-9_26">fuzzy-logic unequal clustering in wireless sensor networks</a> appeared at ICCCI 2024.</span></li>
-    <li hidden><time datetime="2023-05">May 2023</time><span><a href="https://ieeexplore.ieee.org/document/10151281">EEG channel selection using deep Q-network</a> appeared at REEDCON 2023.</span></li>
-    <li hidden><time datetime="2022-11">November 2022</time><span>Our review of <a href="https://www.mdpi.com/2306-5354/9/12/726">EEG channel selection in motor imagery</a> was published in Bioengineering.</span></li>
+    <li><time datetime="2023-05">May 2023</time><span><a href="https://ieeexplore.ieee.org/document/10151281">EEG channel selection using deep Q-network</a> appeared at REEDCON 2023.</span></li>
+    <li><time datetime="2022-11">November 2022</time><span>Our review of <a href="https://www.mdpi.com/2306-5354/9/12/726">EEG channel selection in motor imagery</a> was published in Bioengineering.</span></li>
   </ul>
   <button class="more" id="more" type="button">Show more updates</button>
 </main>
@@ -162,10 +162,19 @@
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 (function(){
+  // Show only this year's updates; older ones open with the button.
   const btn = document.getElementById('more');
-  const hidden = document.querySelectorAll('#updates li[hidden]');
-  if (!hidden.length) { btn.remove(); return; }
-  btn.addEventListener('click', () => { hidden.forEach(li => li.hidden = false); btn.remove(); });
+  const year = String(new Date().getFullYear());
+  const items = [...document.querySelectorAll('#updates li')];
+  const older = items.filter(li => !li.querySelector('time').getAttribute('datetime').startsWith(year));
+  if (older.length === items.length) {
+    // Nothing yet this year: keep the newest update visible so the section is not empty.
+    older.shift();
+  }
+  older.forEach(li => li.hidden = true);
+  if (!older.length) { btn.remove(); return; }
+  btn.textContent = 'Show earlier updates';
+  btn.addEventListener('click', () => { older.forEach(li => li.hidden = false); btn.remove(); });
 })();
 </script>
 </body>
