@@ -1,0 +1,115 @@
+:root{
+  --bg:#ffffff;
+  --ink:#212529;
+  --muted:#6c757d;
+  --rule:#dee2e6;
+  --link:#2a7ae2;
+  --box:#f3f3f3;
+  --box-edge:#c9ced3;
+  --cv:#e3effd;
+  --footer:#24262b;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:18px/1.6 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible, button:focus-visible{outline:2px solid var(--link); outline-offset:2px; border-radius:2px}
+
+.container{max-width:800px; margin:0 auto; padding:0 16px}
+.wide{max-width:930px; margin:0 auto; padding:0 16px}
+
+/* ---- header ---- */
+h1{font-weight:600; font-size:clamp(40px,7vw,58px); line-height:1.1; letter-spacing:-.02em; margin:56px 0 44px}
+.intro{display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:56px; align-items:start}
+.intro p{margin:0 0 18px}
+.intro strong{font-weight:600}
+
+.photo{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.contact{
+  list-style:none; margin:8px 0 0; padding:18px 20px;
+  background:var(--box); border-left:3px solid var(--box-edge);
+  font-size:16px; line-height:1.5;
+}
+.contact li{display:flex; align-items:center; gap:12px; padding:1px 0}
+.contact a{color:var(--ink)}
+.contact a:hover{color:var(--link); text-decoration:none}
+.ico{width:16px; height:16px; flex:none; fill:#555}
+.cv{
+  display:flex; align-items:center; gap:12px; margin-top:8px; padding:16px 20px;
+  background:var(--cv); border-left:3px solid #9cc1ef; color:var(--ink); font-size:16px;
+}
+.cv:hover{text-decoration:none; color:var(--link)}
+
+hr{border:0; border-top:1px solid var(--rule); margin:24px 0}
+
+/* ---- featured cards ---- */
+h2{font-weight:400; font-size:32px; line-height:1.25; margin:28px 0 24px}
+h2 a{font-weight:600}
+.cards{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px}
+.card{
+  display:flex; flex-direction:column; min-height:240px;
+  border:1px solid var(--rule); padding:18px 16px 16px;
+}
+.card h3{font-weight:500; font-size:22px; line-height:1.3; margin:0 0 4px}
+.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--link); text-decoration:none}
+.card .sub{font-size:14px; line-height:1.45; color:var(--muted); margin:0 0 8px}
+.card .venue{font-size:13px; font-style:italic; margin:0}
+.card .foot{margin-top:auto; padding-top:16px}
+.badge{
+  display:inline-flex; align-items:center; gap:5px; margin-bottom:8px;
+  font-size:11.5px; font-weight:600; padding:2px 7px; border-radius:3px;
+}
+.badge.cite{background:#fff3cd; color:#8a6100}
+.badge.oa{background:#e3effd; color:#1d5fb4}
+.badge svg{width:11px; height:11px; fill:currentColor}
+.plinks{display:flex; gap:14px; font-size:13px}
+.plinks a{display:inline-flex; align-items:center; gap:4px}
+.plinks svg{width:12px; height:12px; fill:currentColor}
+
+/* ---- updates ---- */
+.updates{list-style:none; margin:0; padding:0}
+.updates li{display:grid; grid-template-columns:136px minmax(0,1fr); gap:0; padding:14px 0; border-bottom:1px solid var(--rule); font-size:16.5px; line-height:1.45}
+.updates li:last-child{border-bottom:0}
+.updates time{font-size:15px; font-weight:600; color:#8a9199}
+.updates li[hidden]{display:none}
+.more{
+  display:block; margin:12px auto 64px; font:inherit; font-size:15px;
+  color:var(--link); background:#fff; border:1px solid var(--link); border-radius:3px;
+  padding:6px 16px; cursor:pointer;
+}
+.more:hover{background:var(--link); color:#fff}
+
+/* ---- publications page ---- */
+.year{font-size:22px; font-weight:600; margin:36px 0 8px}
+.pub{padding:12px 0; border-bottom:1px solid var(--rule)}
+.pub:last-child{border-bottom:0}
+.pub .t{font-size:18px; font-weight:500; line-height:1.4; color:var(--ink)}
+.pub a.t:hover{color:var(--link); text-decoration:none}
+.pub .a{font-size:15px; color:var(--muted); margin-top:2px}
+.pub .a b{color:var(--ink); font-weight:600}
+.pub .v{font-size:15px; font-style:italic; color:var(--muted)}
+.back{display:inline-block; margin-top:48px; font-size:15px}
+
+/* ---- footer ---- */
+footer{background:var(--footer); color:#e9ecef; padding:44px 0 52px; font-size:16px}
+footer .icons{display:flex; gap:18px; margin-bottom:18px}
+footer .icons svg{width:24px; height:24px; fill:#e9ecef}
+footer .icons a:hover svg{fill:#8fb8f0}
+footer p{margin:0}
+
+@media (max-width:900px){ .cards{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:700px){
+  body{font-size:17px}
+  h1{margin:36px 0 28px}
+  .intro{grid-template-columns:1fr; gap:28px}
+  .intro aside{max-width:300px}
+  .cards{grid-template-columns:1fr; gap:20px}
+  .card{min-height:0}
+  h2{font-size:26px}
+  .updates li{grid-template-columns:1fr; gap:2px}
+}
