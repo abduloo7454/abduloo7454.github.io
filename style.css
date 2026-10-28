@@ -78,11 +78,17 @@ h2 a{font-weight:600}
 .updates time{font-size:15px; font-weight:600; color:#8a9199}
 .updates li[hidden]{display:none}
 .more{
-  display:block; margin:12px auto 64px; font:inherit; font-size:15px;
+  display:block; margin:12px auto 40px; font:inherit; font-size:15px;
   color:var(--link); background:#fff; border:1px solid var(--link); border-radius:3px;
   padding:6px 16px; cursor:pointer;
 }
 .more:hover{background:var(--link); color:#fff}
+
+/* ---- you can also look at ---- */
+.also{display:block; border:1px solid var(--rule); border-left:3px solid var(--link); padding:16px 20px; margin:0 0 64px; color:var(--ink)}
+.also:hover{text-decoration:none; background:#f7faff}
+.also-t{display:block; font-size:20px; font-weight:600; color:var(--link)}
+.also-d{display:block; font-size:15.5px; color:var(--muted); margin-top:2px}
 
 /* ---- publications page ---- */
 .year{font-size:22px; font-weight:600; margin:36px 0 8px}
