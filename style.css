@@ -85,7 +85,8 @@ h2 a{font-weight:600}
 .more:hover{background:var(--link); color:#fff}
 
 /* ---- you can also look at ---- */
-.also{display:block; border:1px solid var(--rule); border-left:3px solid var(--link); padding:16px 20px; margin:0 0 64px; color:var(--ink)}
+.also{display:block; border:1px solid var(--rule); border-left:3px solid var(--link); padding:16px 20px; margin:0 0 8px; color:var(--ink)}
+.also-h{margin-top:40px}
 .also:hover{text-decoration:none; background:#f7faff}
 .also-t{display:block; font-size:20px; font-weight:600; color:var(--link)}
 .also-d{display:block; font-size:15.5px; color:var(--muted); margin-top:2px}
